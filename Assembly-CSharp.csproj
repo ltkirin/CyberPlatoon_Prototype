@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{16DAA4D9-FFF6-84A5-8715-2006447A6807}</ProjectGuid>
+    <ProjectGuid>{965D0029-351E-C30D-D64F-C4ED5311F2DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,69 +60,70 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Attack\Attack.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\FireteamDTO.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\PlatoonDTO.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\SquadDTO.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\Trooper\CommanderDTO.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\Trooper\TrooperDTO.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\Trooper\TrooperParameters\TrooperInfoDTO.cs" />
-    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\Trooper\TrooperParameters\TrooperStaticticsDTO.cs" />
+    <Compile Include="Assets\Scripts\Combat\Attack\Attack.cs" />
+    <Compile Include="Assets\Scripts\Combat\Firefight\enums\FirefightRange.cs" />
+    <Compile Include="Assets\Scripts\Combat\Firefight\Firefight.cs" />
+    <Compile Include="Assets\Scripts\Combat\Orders\Common\BaseOrder.cs" />
+    <Compile Include="Assets\Scripts\Combat\Orders\Enums\OrderType.cs" />
+    <Compile Include="Assets\Scripts\Combat\Wounds\enums\WoundEffect.cs" />
+    <Compile Include="Assets\Scripts\Combat\Wounds\enums\WoundSeverity.cs" />
+    <Compile Include="Assets\Scripts\Combat\Wounds\factory\WoundsFactory.cs" />
+    <Compile Include="Assets\Scripts\Combat\Wounds\Wound.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ObjectDTO\CommanderDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ObjectDTO\Common\BaseObjectDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ObjectDTO\FireteamDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ObjectDTO\PlatoonDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ObjectDTO\SquadDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ObjectDTO\TrooperDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ParameterDTO\TrooperParameters\TrooperInfoDTO.cs" />
+    <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\ParameterDTO\TrooperParameters\TrooperStaticticsDTO.cs" />
     <Compile Include="Assets\Scripts\DataTransition\GameObjects\DTO\WeaponDTO.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Common\CombatObject.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Commander\CommanderModel.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Commander\Enums\CommanderTier.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Enums\PersonalBodyArmorTypes.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Enums\TrooperTier.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Factory\TrooperFactory.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Implants\Collection\ImplantsCollection.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Implants\Common\BaseImplant.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Implants\CyberLimbs.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\Implants\LifeSaverImplant.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\TrooperModel.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\TrooperParameters\TrooperInfo.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\TrooperParameters\TrooperStatistics.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\TrooperParameters\TrooperStatus.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Trooper\TrooperParameters\TrooperWeaponary.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Weapon\enums\WeaponType.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Weapon\Factory\WeaponsFactory.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\CombatObjects\Weapon\WeaponModel.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Enums\RollType.cs" />
+    <Compile Include="Assets\Scripts\Enums\RollType.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Common\ModelBase.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Model\Fireteam\enums\MoraleMode.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Model\Fireteam\FireteamModel.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Orders\Common\BaseOrder.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Orders\Enums\OrderType.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Commander\CommanderModel.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Commander\Enums\CommanderTier.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Enums\PersonalBodyArmorTypes.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Enums\TrooperTier.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Factory\TrooperFactory.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Implants\Collection\ImplantsCollection.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Implants\Common\BaseImplant.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Implants\CyberLimbs.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\Implants\LifeSaverImplant.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\TrooperModel.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\TrooperParameters\TrooperInfo.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\TrooperParameters\TrooperStatistics.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\TrooperParameters\TrooperStatus.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Trooper\TrooperParameters\TrooperWeaponary.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Model\Unit\Common\UnitModel.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Model\Unit\Factory\PlatoonFactory.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Model\Unit\PlatoonModel.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Model\Unit\SquadModel.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\EnumConverter.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\Random\Randomizer.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\ValuesStorage\Storages\FirefightRangesValues.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\ValuesStorage\Storages\HitsValues.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\ValuesStorage\Storages\RollMaxValues.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\ValuesStorage\Storages\WoundsValues.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Model\Util\ValuesStorage\ValuesStorage.cs" />
-    <Compile Include="Assets\Scripts\ObjectsInteractions\Firefight\enums\FirefightRange.cs" />
-    <Compile Include="Assets\Scripts\ObjectsInteractions\Firefight\Firefight.cs" />
-    <Compile Include="Assets\Scripts\ObjectsInteractions\Wounds\enums\WoundEffect.cs" />
-    <Compile Include="Assets\Scripts\ObjectsInteractions\Wounds\enums\WoundSeverity.cs" />
-    <Compile Include="Assets\Scripts\ObjectsInteractions\Wounds\factory\WoundsFactory.cs" />
-    <Compile Include="Assets\Scripts\ObjectsInteractions\Wounds\Wound.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Weapon\enums\WeaponType.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Weapon\Factory\WeaponsFactory.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Model\Weapon\WeaponModel.cs" />
+    <Compile Include="Assets\Scripts\Util\EnumConverter.cs" />
+    <Compile Include="Assets\Scripts\Util\Random\Randomizer.cs" />
+    <Compile Include="Assets\Scripts\Util\ValuesStorage\Storages\FirefightRangesValues.cs" />
+    <Compile Include="Assets\Scripts\Util\ValuesStorage\Storages\HitsValues.cs" />
+    <Compile Include="Assets\Scripts\Util\ValuesStorage\Storages\RollMaxValues.cs" />
+    <Compile Include="Assets\Scripts\Util\ValuesStorage\Storages\WoundsValues.cs" />
+    <Compile Include="Assets\Scripts\Util\ValuesStorage\ValuesStorage.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Development/Unity/Versions/2018.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -326,16 +327,16 @@
       <HintPath>D:/Development/Unity/Versions/2018.3.5f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Development/Repo/CyberPlatoon_Prototype/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Development/Repo/CyberPlatoon_prototype/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Development/Unity/Versions/2018.3.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
